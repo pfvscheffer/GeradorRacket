@@ -1,5 +1,3 @@
-var teste = '';
-
 function ajustarAltura(textarea) {
 	textarea.rows = textarea.value.split(/\r?\n/).length;
 }
@@ -19,13 +17,17 @@ function criarStruct() {
 	var nome = document.getElementById("txtStructNome").value;
 	var params = document.getElementById("txtStructParam").value.split(/,/);
 	var texto = '(define-struct ' + toCamelCase(nome);
-	texto += ' (' + declaraParametros(params) + ')';
+	texto += ' (' + declaraParametros(params) + '))';
 	
 	document.getElementById("txtStructSaida").value = texto;
 }
 
-function declaraParametros(string) {
-
+function declaraParametros(strArr) {
+	var arrParams = [];
+	for (var i = 0; i < strArr.length; i++) {
+		arrParams.push(strArr[i].trim().split(/\s+/)[0]);
+	}
+	return arrParams.join(" ");
 }
 
 function nomesParametros(arrayParametros) {
