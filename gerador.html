@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador chinelão de Racket</title>
+    <link rel="stylesheet" type="text/css" href="gerador.css"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1>Gerador chinelão de Racket</h1>
+    <h2>Estrutura</h2>
+    <p>Nome: <input type="text" id="txtStructNome" value="estrutura"
+		class="txtUmaLinha" /></p>
+	<p>Conteúdo: <input type="text" id="txtStructParam"
+		value="par1 tipo1, par2 tipo2" class="txtUmaLinha"/></p>
+	<p><input type="button" id="btnStruct" class="botoes"value="Gerar"/></p>
+	<textarea id="txtStructSaida" class="txtSaida"
+		rows="4">(define-struct estrutura (p1 p2))
+;; Elemento do conjunto Estrutura:
+;; (make-estrutura 1p1 1p2) onde:
+;; 1p1: Tipo1
+;; 1p2: Tipo2</textarea>
+<!--    <h2>Tipo Misto<h2>
+    <p>Tipo principal:</p>
+    <input id="txtTipoMisto0" type="text" class="txtUmaLinha"></input>
+    <button id="btnAddTipoMisto">+ Tipo</button> -->
+</body>
+	<script type="text/javascript" src="gerador.js"></script>
+</html>

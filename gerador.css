@@ -1,0 +1,17 @@
+body { background-color: darkblue;
+       color: beige }
+
+h1 { font-family: sans-serif }
+
+p { font-family: sans-serif }
+
+.txtUmaLinha { font-family: Consolas, monospace;
+           /* resize: none; */
+           background-color: lightblue;
+		   color: olive }
+
+.txtSaida { font-family: Consolas, monospace;
+			color: yellow;
+			background-color: blue;
+			width: 100%;
+			overflow: hidden }
