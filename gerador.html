@@ -13,12 +13,17 @@
 	<p>Conteúdo: <input type="text" id="txtStructParam"
 		value="par1 tipo1, par2 tipo2" class="txtUmaLinha"/></p>
 	<p><input type="button" id="btnStruct" class="botoes"value="Gerar"/></p>
-	<textarea id="txtStructSaida" class="txtSaida"
-		rows="4">(define-struct estrutura (p1 p2))
-;; Elemento do conjunto Estrutura:
-;; (make-estrutura 1p1 1p2) onde:
-;; 1p1: Tipo1
-;; 1p2: Tipo2</textarea>
+	<div>
+		<div class="meioDiv">
+			<textarea id="txtStructSaida" class="txtSaida"
+				rows="4">(define-struct estrutura (par1 par2))
+;; Elemento do conjunto Estrutura.
+;; (make-estrutura 1par1 1par2) onde:
+;; 1par1: Tipo1
+;; 1par2: Tipo2</textarea>
+		</div>
+		<div id="metodosStruct" class="meioDiv"></div>
+	</div>
 <!--    <h2>Tipo Misto<h2>
     <p>Tipo principal:</p>
     <input id="txtTipoMisto0" type="text" class="txtUmaLinha"></input>

@@ -14,4 +14,11 @@ p { font-family: sans-serif }
 			color: yellow;
 			background-color: blue;
 			width: 100%;
-			overflow: hidden }
+			overflow: hidden;
+			border: 0px; }
+
+.meioDiv {
+	float: left;
+	width: 49%;
+	padding: 0.5%
+}
