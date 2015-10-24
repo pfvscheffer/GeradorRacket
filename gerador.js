@@ -17,9 +17,10 @@ function selecionar() {
 
 function makeSeletores(nome, params) {
 	var seletores = [];
-
+	var lNome = toCamelCase(nome);
+        
 	for (var i = 0, len = params.length; i < len; i++) {
-		seletores.push('(' + nome + '-' + params[i].nome + ')');
+		seletores.push('(' + nome + '-' + params[i].nome + ' ' + lNome[0] + ')');
 	}
 
 	return seletores;
