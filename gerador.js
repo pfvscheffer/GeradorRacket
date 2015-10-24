@@ -19,7 +19,7 @@ function makeSeletores(nome, params) {
 	var seletores = [];
 
 	for (var i = 0, len = params.length; i < len; i++) {
-		seletores.push('(' + nome + '-' + params[i].nome + ')');
+		seletores.push('(' + nome + '-' + params[i].nome + ' e)');
 	}
 
 	return seletores;
