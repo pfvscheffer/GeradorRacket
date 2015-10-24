@@ -20,11 +20,7 @@ function makeSeletores(nome, params) {
 	var lNome = toCamelCase(nome);
         
 	for (var i = 0, len = params.length; i < len; i++) {
-<<<<<<< HEAD
 		seletores.push('(' + nome + '-' + params[i].nome + ' ' + lNome[0] + ')');
-=======
-		seletores.push('(' + nome + '-' + params[i].nome + ' e)');
->>>>>>> 02d90faee8e7a9bd5bb1c0baa358edec527c158f
 	}
 
 	return seletores;
